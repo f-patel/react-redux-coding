@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+	padding: 10px;
+}
+
+.header {
+	text-align: left;
+}
+
+.header img {
+    width: 205px;
+    padding: 10px;
+}
+
+.my-list, .recommended-list {
+	display: flex;
+    justify-content: space-evenly;
+
+}
+
+.list-item:hover .btn-list{
+	visibility: visible;
+}
+
+.list-item .btn-list{
+	visibility: hidden;
+	    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 0 #403e3e;
+    color: white;
+    font-weight: bold;
+}
+.btn-list:focus {
+	outline: none;
+}
+
+.btn-remove{
+
+    background: #c9302c;
+}
+
+.btn-add{
+   background: #53b553;
+}
